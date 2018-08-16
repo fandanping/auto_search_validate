@@ -48,6 +48,7 @@ public class validateService {
 			}
 	            prest.executeBatch();
 	            conn.commit();
+			    prest.close();
 	            conn.close();
 			
 		} catch (SQLException e) {

@@ -17,11 +17,12 @@ public class DBUtil {
       PreparedStatement ps = null;
       ResultSet rs = null;
 	  static
+	  
 	    {
 	        try
 	        {
 	            Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();// 加载Oracle驱动程序
-	            //System.out.println("oracle驱动程序加载中！");
+	            System.out.println("oracle驱动程序加载中！");
 	        }
 	        catch(InstantiationException e1)
 	        {
